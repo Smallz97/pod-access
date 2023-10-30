@@ -1,0 +1,36 @@
+/* resetting margins and paddings to ensure consistency accross browsers */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* defining root variables */
+:root {
+  /* defifning font weights as varibles */
+  --small-font: 400;
+
+  /* defining colors as variables */
+  --deep-grey: rgb(44, 52, 75);
+  --deep-purple: rgb(18, 23, 37);
+  --light-grey: rgb(90, 102, 138);
+  --lemon-green: rgb(84, 230, 175);
+  --almost-blue: rgb(194, 203, 229);
+  --almost-white: rgb(255, 255, 255);
+}
+
+/* styling the browser's body */
+body {
+  font-family: "Chivo", sans-serif;
+  background-color: var(--deep-purple);
+}
+
+#hero {
+  width: 100vw;
+  height: 100vh;
+  color: var(--almost-white);
+  background: url(assets/desktop/image-host.jpg);
+  background-position: right;
+  /* background-size: 44.4%; */
+  background-repeat: no-repeat;
+}
