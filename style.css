@@ -112,6 +112,8 @@ form {
   height: 100%;
   padding-left: 1rem;
   border-radius: 1.75rem;
+  color: var(--clear-white);
+  background-color: var(--deep-grey);
 }
 
 .form-btn {
@@ -162,4 +164,80 @@ form {
   height: 100%;
   object-fit: center;
   position: absolute;
+}
+
+
+/* Responsiveness styling using media queries */
+@media screen and (max-width: 900px) {
+  /* resizing the hero section to optimize viewing on mobile screens */
+  #hero {
+    background: url(assets/tablet/image-host.jpg);
+    background-size: 63.93% 74.90%;
+    background-position: right top;
+    background-repeat: no-repeat;
+  }
+
+  /* resizing the logobox to optimize viewing on mobile screens */
+  .logobox {
+    top: 4.875%;
+    left: 5.08%;
+    height: 6.2%;
+    width: 17.558%;
+  }
+
+  /* resizing the textbox to optimize viewing on mobile screens */
+  .textbox {
+    left: 5.08%;
+    top: 25.1875%;
+    width: 82.68%;
+    display: flex;
+    height: 49.70%;
+  }
+
+  /* resizing the doted pattern box to optimize viewing on mobile screens */
+  .dotted-pattern-box {
+    top: 89.84%;
+    left: 5.08%;
+    width: 30.208%;
+    height: 10.156%;
+  }
+
+  /* resizing the heading text to optimize viewing on mobile screens */
+  .heading {
+    width: 100%;
+    font-size: 6.25vw;
+    margin-top: 5.81%;
+    line-height: 1.166;
+  }
+
+  /* resizing the small text to optimize viewing on mobile screens */
+  .small-text {
+    width: 61.55%;
+    font-size: 2.60vw;
+    line-height: 1.555;
+  }
+
+  /* resizing the input form to optimize viewing on mobile screens */
+  .input-form {
+    height: 11%;
+    width: 67.244%;
+  }
+
+  /* resizing the form button to optimize viewing on mobile screens */
+  .form-btn {
+    width: 37.93%;
+    font-size: 1.822vw;
+    border-radius: 1.75rem;
+  }
+
+  /* resizing the supporting-brands box to otpimize viewing on mobile screens */
+  .supporting-brands {
+    width: 84.409%;
+    height: 5.697%;
+  }
+
+  /* resizing the supporting brands to optimize viewing on mobile screens */
+  .brand {
+    width: 16vw;
+  }
 }
