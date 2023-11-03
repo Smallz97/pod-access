@@ -194,14 +194,6 @@ form {
     height: 49.70%;
   }
 
-  /* resizing the doted pattern box to optimize viewing on mobile screens */
-  .dotted-pattern-box {
-    top: 89.84%;
-    left: 5.08%;
-    width: 30.208%;
-    height: 10.156%;
-  }
-
   /* resizing the heading text to optimize viewing on mobile screens */
   .heading {
     width: 100%;
@@ -239,5 +231,36 @@ form {
   /* resizing the supporting brands to optimize viewing on mobile screens */
   .brand {
     width: 16vw;
+  }
+
+  /* resizing the doted pattern box to optimize viewing on smaller mobile screens */
+  .dotted-pattern-box {
+    top: 89.84%;
+    left: 5.08%;
+    width: 30.208%;
+    height: 10.156%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  /* resizing the hero section to optimize viewing on mobile phones */
+  #hero {
+    background-image: url(assets/mobile/image-host.jpg);
+    background-color: var(--lemon-green);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    mix-blend-mode: multiply;
+
+  }
+
+  /* resizing the dotted pattern box to optimize viewing on mobile phones */
+  .dotted-pattern-box {
+    display: none;
+  }
+
+  /* resizing the textbox to optimize viewing on mobile screens */
+  .textbox {
+    display: none;
   }
 }
