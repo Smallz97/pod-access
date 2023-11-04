@@ -95,19 +95,19 @@ body {
   font-weight: var(--small-font);
 }
 
-.input-form {
+.desktop-form-container {
   height: 11%;
   width: 59.05%;
   /* margin-bottom: 12.57%; */
 }
 
-form {
+.desktop-form-wrapper {
   width: 100%;
   height: 100%;
   position: relative;
 }
 
-.email-form {
+.email-input {
   width: 100%;
   height: 100%;
   padding-left: 1rem;
@@ -116,7 +116,7 @@ form {
   background-color: var(--deep-grey);
 }
 
-.form-btn {
+.desktop-form-btn {
   right: 0;
   height: 100%;
   width: 37.93%;
@@ -148,6 +148,10 @@ form {
   height: 100%;
   position: absolute;
   object-fit: center;
+}
+
+.mobile-form-container {
+  display: none;
 }
 
 .dotted-pattern-box {
@@ -210,13 +214,13 @@ form {
   }
 
   /* resizing the input form to optimize viewing on mobile screens */
-  .input-form {
+  .desktop-form-container {
     height: 11%;
     width: 67.244%;
   }
 
   /* resizing the form button to optimize viewing on mobile screens */
-  .form-btn {
+  .desktop-form-btn {
     width: 37.93%;
     font-size: 1.822vw;
     border-radius: 1.75rem;
@@ -246,21 +250,96 @@ form {
   /* resizing the hero section to optimize viewing on mobile phones */
   #hero {
     background-image: url(assets/mobile/image-host.jpg);
-    background-color: var(--lemon-green);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    mix-blend-mode: multiply;
-
+  }
+  
+  /* resizing the logobox to optimize viewing on mobile phones */
+  .logobox {
+    left: 50%;
+    top: 9.307%;
+    width: 35.96%;
+    height: 8.395%;
+    margin-left: -17.98%;
   }
 
-  /* resizing the dotted pattern box to optimize viewing on mobile phones */
-  .dotted-pattern-box {
+  /* resizing the textbox to optimize viewing on mobile phones */
+  .textbox {
+    left: 50%;
+    width: 87.2%;
+    height: 59.670%;
+    margin-top: 8.539%;
+    text-align: center;
+    margin-left: -43.6%;
+    background: none;
+  }
+
+  /* resizing the heading text to optimize viewing on mobile phones */
+  .heading {
+    width: 100%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    line-height: 1.465;
+    font-size: 6.933vw;
+  }
+
+  /* resizing the small text to optimize viewing on mmobile phones */
+  .small-text {
+    width: 100%;
+    font-size: 4vw;
+    line-height: 1.666;
+  }
+
+  /* setting the desktop form container to not display on mobile phones */
+  .desktop-form-container {
     display: none;
   }
 
-  /* resizing the textbox to optimize viewing on mobile screens */
-  .textbox {
+  /* styling the form container to optimize viewing on mobile phones */
+  .mobile-form-container {
+    width: 100%;
+    display: block;
+    height: 27.135%;
+  }
+
+  /* stylng the form element to optimize viewing on mobile phones */
+  .mobile-form-wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  /* styling the email input and mobile form button of the email form field */
+  .email-input, .mobile-form-btn {
+    width: 100%;
+    height: 42.59%;
+    border-radius: 1.75rem;
+    font-weight: var(--small-font);
+  }
+
+  /* styling the input form to optimize viewing on mobile phones */
+  .email-input {
+    padding-left: 1rem;
+    color: var(--clear-white);
+    background-color: var(--deep-grey);
+  }
+
+  /* styling the form button to optimize viewing on mobile phones */
+  .mobile-form-btn {
+    color: var(--deep-purple);
+    background-color: var(--lemon-green);
+  }
+
+  /* resizing the sponsorship brands to optimize viewing on mobile screens */
+  .supporting-brands {
+    width: 100%;
+  }
+
+  /* setting the dotted patterns box to not display on mobile screens */
+  .dotted-pattern-box {
     display: none;
   }
 }
