@@ -32,16 +32,15 @@ button {
 body {
   font-family: "Chivo", sans-serif;
   background-color: var(--deep-purple);
+  background-image: url(assets/desktop/image-host.jpg);
+  background-size: 62% 71%;
+  background-position: right;
+  background-repeat: no-repeat;
 }
 
 #hero {
   width: 100vw;
   height: 100vh;
-  position: relative;
-  background: url(assets/desktop/image-host.jpg);
-  background-size: 62% 71%;
-  background-position: right;
-  background-repeat: no-repeat;
 }
 
 .logobox {
@@ -105,11 +104,13 @@ body {
   width: 100%;
   height: 100%;
   position: relative;
+  /* background-color: orange; */
 }
 
 .email-input {
   width: 100%;
   height: 100%;
+  outline: none;
   padding-left: 1rem;
   border-radius: 1.75rem;
   color: var(--clear-white);
@@ -140,13 +141,11 @@ body {
   width: 6.6vw;
   height: 100%;
   display: flex;
-  position: relative;
 }
 
 .brand img {
   width: 100%;
   height: 100%;
-  position: absolute;
   object-fit: center;
 }
 
@@ -173,12 +172,11 @@ body {
 
 /* Responsiveness styling using media queries */
 @media screen and (max-width: 900px) {
-  /* resizing the hero section to optimize viewing on mobile screens */
-  #hero {
-    background: url(assets/tablet/image-host.jpg);
+  /* restyling the body section to optimize viewing on mobile screens */
+  body {
+    background-image: url(assets/tablet/image-host.jpg);
     background-size: 63.93% 74.90%;
     background-position: right top;
-    background-repeat: no-repeat;
   }
 
   /* resizing the logobox to optimize viewing on mobile screens */
@@ -247,8 +245,8 @@ body {
 }
 
 @media screen and (max-width: 450px) {
-  /* resizing the hero section to optimize viewing on mobile phones */
-  #hero {
+  /* restyling the body background to optimize viewing on mobile phones */  
+  body {
     background-image: url(assets/mobile/image-host.jpg);
     background-size: cover;
     background-position: center;
@@ -269,10 +267,10 @@ body {
     left: 50%;
     width: 87.2%;
     height: 59.670%;
+    background: none;
     margin-top: 8.539%;
     text-align: center;
     margin-left: -43.6%;
-    background: none;
   }
 
   /* resizing the heading text to optimize viewing on mobile phones */
@@ -333,12 +331,12 @@ body {
     background-color: var(--lemon-green);
   }
 
-  /* resizing the sponsorship brands to optimize viewing on mobile screens */
+  /* resizing the sponsorship brands to optimize viewing on mobile phones */
   .supporting-brands {
     width: 100%;
   }
 
-  /* setting the dotted patterns box to not display on mobile screens */
+  /* setting the dotted patterns box to not display on mobile phones */
   .dotted-pattern-box {
     display: none;
   }
